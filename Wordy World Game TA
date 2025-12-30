@@ -1,0 +1,107 @@
+import random
+print("Welcome to the Wordy World Game")
+a=input("Pick a theme: winter, summer, Halloween, and anything: ")
+if a=="winter":
+    options=["blizzard","christmas","snowstorm","reindeer"]
+    b=random.randint (0, 3)
+    c=options[b]
+    while True:
+        if c=="blizzard":
+            hint=("8 letters")
+            print(hint)
+            answer=input("Guess the word: ")
+        if c=="christmas":
+            hint1=("9 letters")
+            print(hint1)
+            answer=input("Guess the word: ")
+        if c=="snowstorm":
+            hint2=("9 letters")
+            print(hint2)
+            answer=input("Guess the word: ")
+        if c=="reindeer":
+            hint3=("8 letters")
+            print(hint3)
+            answer=input("Guess the word: ")
+        if answer==c:
+            print("Great Job")
+            break
+        else:
+            print("Try again")
+if a=="summer":
+    options1=["heatwave","scorching","sweltering","summertime"]
+    d=random.randint (0, 3)
+    e=options1[d]
+    while True:
+        if e=="heatwave":
+            hint4=("8 letters")
+            print(hint4)
+            answer=input("Guess the word: ")
+        if e=="scorching":
+            hint5=("9 letters")
+            print(hint5)
+            answer=input("Guess the word: ")
+        if e=="sweltering":
+           hint6=("10 letters")
+           print(hint6)
+           answer=input("Guess the word: ")
+        if e=="summertime":
+            hint7=("10 letters")
+            print(hint7)
+            answer=input("Guess the word: ")
+        if answer==e:
+            print("Great Job")
+            break
+        else:
+            print("Try again")
+if a=="Halloween":
+    options2=["eerie","pumpkin","jack-o-lantern","creepy"]
+    f=random.randint (0, 3)
+    g=options2[f]
+    while True:
+        if g=="eerie":
+            hint8=("5 letters")
+            print(hint8)
+            answer=input("Guess the word: ")
+        if g=="pumpkin":
+            hint9=("7 letters")
+            print(hint9)
+            answer=input("Guess the word: ")
+        if g=="jack-o-lantern":
+            hint10=("14 letters")
+            print(hint10)
+            answer=input("Guess the word: ")
+        if g=="creepy":
+            hint11=("6 letters")
+            print(hint11)
+            answer=input("Guess the word: ")
+        if answer==g:
+            print("Great Job")
+            break
+        else:
+            print("Try again")
+if a=="anything":
+    options3=["mummy","foyer","silly","jolly"]
+    h=random.randint (0, 3)
+    i=options3[h]
+    while True:
+        if i=="mummy":
+            hint12=("5 letters")
+            print(hint12)
+            answer=input("Guess the word: ")
+        if i=="foyer":
+            hint13=("5 letters")
+            print(hint13)
+            answer=input("Guess the word: ")
+        if i=="silly":
+            hint14=("5 letters")
+            print(hint14)
+            answer=input("Guess the word: ")
+        if i=="jolly":
+            hint15=("5 letters")
+            print(hint15)
+            answer=input("Guess the word: ")
+        if answer==i:
+            print("Great Job")
+            break
+        else:
+            print("Try again")
