@@ -1,0 +1,14 @@
+import random
+options=["rock","paper","scissor"]
+computer_choice=random.randint(0,2)
+computer_move=options[computer_choice]
+user_move=input("Enter rock, paper or scissor: ")
+print(f"Computer chose: {computer_move}")
+if computer_move==user_move:
+    print("Its a tie")
+elif (user_move=="rock") and (computer_move=="scissor")or\
+    (user_move=="paper") and (computer_move=="rock")or \
+    (user_move=="scissor") and (computer_move=="paper"):
+    print("You win")
+else:
+    print("Computer wins")
